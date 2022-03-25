@@ -26,11 +26,4 @@ jobs:
 
         # Builds website repo
         - name: Build
-          run: hugo --minify
-
-        # Deploys built website to S3
-        - name: Deploy to S3
-          run: hugo deploy --force --maxDeletes -1 --invalidateCDN
-          env:
-            AWS_ACCESS_KEY_ID: $
-            AWS_SECRET_ACCESS_KEY: $
+          run: hugo -e development -b https://mappjzc.github.com/
