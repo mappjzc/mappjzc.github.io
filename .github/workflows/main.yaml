@@ -6,10 +6,13 @@ name: Build and Deploy Hugo Site
 on:
   push:
     branches: [ main ]
+  pull_request:
+    branches:
+      - main
 
 jobs:
   Build_and_Deploy:
-      runs-on: ubuntu-18.04
+      runs-on: ubuntu-latest
       steps:
         # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
         - name: Checkout
@@ -21,7 +24,7 @@ jobs:
           with:
               hugo-version: '0.94.0'
 
-        # Builds chrisjburns.com repo
+        # Builds website repo
         - name: Build
           run: hugo --minify
 
