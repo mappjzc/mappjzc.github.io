@@ -27,3 +27,11 @@ jobs:
         # Builds website repo
         - name: Build
           run: hugo -e development -b https://mappjzc.github.com/
+        - name: Deploy
+          uses: benmatselby/hugo-deploy-gh-pages@master
+          env:
+            GITHUB_ACTOR: mappjzc
+            TARGET_REPO: mappjzc/mappjzc.github.io
+            TARGET_BRANCH: main
+            TOKEN: ${{ secrets.DEVLAKE_WEBSITE }}
+            CNAME: mappjzc.github.io
