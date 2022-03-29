@@ -3,7 +3,7 @@
 {{ $height := .Get "height" | default "auto"  }}
 {{/* Height can be one of: auto, min, med, max, full. */}}
 <a id="td-block-{{ .Ordinal }}" class="td-offset-anchor"></a>
-<section class="row td-box td-box--{{ $col_id }} position-relative td-box--gradient td-box--height-{{ $height }}">
+<section class="row td-box td-box--{{ $col_id }} position-relative td-box--gradient td-box--height-{{ $height }}" style="padding-top: 1rem; padding-bottom: 1rem">
 	<div class="container text-center td-arrow-down">
 		<div class="h4 mb-0">
 			{{ if eq .Page.File.Ext "md" }}

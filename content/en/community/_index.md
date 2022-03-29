@@ -1,9 +1,8 @@
 ---
-title: Community
+title: "Community"
+linkTitle: "Community"
 menu:
   main:
-    weight: 40
-    pre: <i class='fas fa-users'></i>
+    weight: 3
+    pre: <img src='/images/Message.png'/><i class='fab'></i>
 ---
-
-<!--add blocks of content here to add more sections to the community page -->

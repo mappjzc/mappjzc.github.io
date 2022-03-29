@@ -22,7 +22,7 @@ jobs:
         - name: Setup Hugo
           uses: peaceiris/actions-hugo@v2
           with:
-              hugo-version: '0.94.0'
+              hugo-version: '0.94.2'
 
         # Builds website repo
         - name: Build
@@ -31,6 +31,7 @@ jobs:
           uses: benmatselby/hugo-deploy-gh-pages@master
           env:
             GITHUB_ACTOR: mappjzc
+            HUGO_VERSION: '0.94.2+extended'
             TARGET_REPO: mappjzc/mappjzc.github.io
             TARGET_BRANCH: main
             TOKEN: ${{ secrets.DEVLAKE_WEBSITE }}

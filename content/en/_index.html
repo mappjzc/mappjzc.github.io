@@ -1,42 +1,46 @@
 +++
-title = "Docsy"
-linkTitle = "Docsy"
+title = "DevLake"
+linkTitle = "DevLake"
 
 +++
 
-{{< blocks/cover title="Welcome to Docsy!" image_anchor="top" height="full" color="orange" >}}
+<!--标题-->
+{{< blocks/cover title="Welcome to DevLake" image_anchor="top" height="full" color="orange" >}}
 <div class="mx-auto">
-	<a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/team" >}}">
-		Team <i class="fas fa-arrow-alt-circle-right ml-2"></i>
+	<a class="btn btn-lg btn-secondary mr-3 mb-4" href="{{< relref "/docs/" >}}quick-start/1.localsetup/">
+		<img src="/images/Flash.png"/><i class="fas"></i> Quick start 
 	</a>
-	<a class="btn btn-lg btn-secondary mr-3 mb-4" href="https://github.com/google/docsy">
-		Download <i class="fab fa-github ml-2 "></i>
+	<a class="btn btn-lg btn-light mr-3 mb-4" href="https://github.com/merico-dev/lake">
+		<img src="/images/Github.png"/><i class="fas"></i> GitHub
 	</a>
-	<p class="lead mt-5">A Hugo theme for creating great technical documentation sites</p>
+	<!--副标题-->
+	<p class="lead mt-5">Make better sense of your software development process by ingesting, analyzing, and visualizing data from an ever-growing list of developer tools</p>
 	{{< blocks/link-down color="info" >}}
 </div>
 {{< /blocks/cover >}}
 
-
+<!--简介-->
 {{% blocks/lead color="primary" %}}
-Docsy is a theme for the Hugo static site generator that's specifically designed for technical documentation sets. Our aim is to help you get a working documentation site up and running as easily as possible, so you can concentrate on creating great content for your users.
+<img src="/images/lead.png" style="width: 100%;">
 {{% /blocks/lead %}}
 
+
+<!--下方三图标按钮-->
 {{< blocks/section color="dark" type="features">}}
-{{% blocks/feature icon="fa-lightbulb" title="See Docsy in action!" url="/docs/examples/" %}}
-As well as our example site, there's a growing number of projects using Docsy for their doc sites.
+{{% blocks/feature icon="/images/SilosConnected.png" title="Silos Connected" url="https://github.com/merico-dev/lake" %}}
+Collect DevOps data across the entire SDLC process and connect data silos
 {{% /blocks/feature %}}
 
 
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/google/docsy" %}}
-We do a [Pull Request](https://github.com/google/docsy/pulls) contributions workflow on **GitHub**. New users are always welcome!
+{{% blocks/feature icon="/images/Out-of-the-boxAnalysis.png" title="Out-of-the-box Analysis" url="https://github.com/merico-dev/lake" %}}
+A standard data model and out-of-the-box metrics for software engineering
 {{% /blocks/feature %}}
 
 
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!" url="https://twitter.com/docsydocs" %}}
-Find out about new features and how our users are using Docsy.
+{{% blocks/feature icon="/images/HighlyFlexible.png" title="Highly Flexible" url="https://github.com/merico-dev/lake" %}}
+Flexible framework for data collection and ETL, support customized analysis
 {{% /blocks/feature %}}
 
-
+<!--底部-->
 {{< /blocks/section >}}
 

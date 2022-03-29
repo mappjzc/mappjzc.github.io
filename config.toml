@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "Merico Test"
+title = "Merico devlake"
 
 publishDir = "public"
 
@@ -54,36 +54,56 @@ resampleFilter = "CatmullRom"
 quality = 75
 anchor = "smart"
 
-# Additional menu items
-
-[[menu.main]]
-    name = "GitHub"
-    weight = 50
-    url = "https://github.com/merico-dev/lake/"
-    pre = "<i class='fab fa-github'></i>"
-    post = "<span class='alert'>New!</span>" 
+[[params.versions]]
+  version = "latest"
+  url = "https://github.com/merico-dev/lake/releases/latest"
+[[params.versions]]
+  version = "v0.9.0"
+  url = "https://github.com/merico-dev/lake/releases/tag/v0.9.0"
+[[params.versions]]
+  version = "v0.8.0"
+  url = "https://github.com/merico-dev/lake/releases/tag/v0.8.0"
+[[params.versions]]
+  version = "..."
+  url = "https://github.com/merico-dev/lake/releases/"
 
 [services]
 [services.googleAnalytics]
 # Comment out the next line to disable GA tracking. Also disables the feature described in [params.ui.feedback].
 id = "UA-00000000-0"
 
-# Language configuration
-
+#————————————————————————中文—————————————————————————
 [languages]
 [languages.zh]
-title = "思码逸"
+title = "DevLake"
 description = "DevLake官网"
 LanguageName = "中文"
-# weigth用于排序
-weight = 2
+version_menu = "下载"
+# weigth 重量 用于排序
+weight = 1
 contentDir = "content/zh"
+
+[[languages.zh.menu.main]]
+	name = "团队"
+	weight = 4
+	url = "https://github.com/merico-dev/lake/graphs/contributors"
+	pre = "<img src='/images/Users.png'/><i class='fab'></i>"
+
+#--------------------English--------------------------
 [languages.en]
-title = "Merico"
+title = "DevLake"
 description = "WebSite for DevLake"
 languageName ="English"
+version_menu = "Download"
 # Weight used for sorting.
-weight = 1
+weight = 2
+contentDir = "content/en"
+
+[[languages.en.menu.main]]
+	name = "Team"
+	weight = 4
+	url = "https://github.com/merico-dev/lake/graphs/contributors"
+	pre = "<img src='/images/Users.png'/><i class='fab'></i>"
 
 [markup]
   [markup.goldmark]
@@ -98,12 +118,13 @@ weight = 1
 # Everything below this are Site Params
 
 [params]
-copyright = "The Docsy Authors"
+copyright = "The Merico Authors"
 privacy_policy = "https://policies.google.com/privacy"
 
 # Menu title if your navbar has a versions selector to access old versions of your site.
 # This menu appears only if you have at least one [params.versions] set.
-version_menu = "Releases"
+# 该配置已经移交给 Language 下子项负责
+# version_menu = "Download"
 
 # Flag used in the "version-banner" partial to decide whether to display a 
 # banner on every page indicating that this is an archived version of the docs.
@@ -117,12 +138,12 @@ version = "0.0"
 
 # A link to latest version of the docs. Used in the "version-banner" partial to
 # point people to the main doc site.
-url_latest_version = "https://example.com"
+url_latest_version = "https://merico.nddtf.com/"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-github_repo = "https://github.com/google/docsy"
+github_repo = "https://github.com/mappjzc/mappjzc.github.io"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-github_project_repo = "https://github.com/google/docsy"
+github_project_repo = "https://github.com/merico-dev/lake"
 
 # Specify a value here if your content directory is not in your repo's root directory
 github_subdir = "userguide"
@@ -167,8 +188,8 @@ navbar_logo = true
 enable = true
 # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
 # Update with your own repository and response text.
-yes = 'Glad to hear it! Please <a href="https://github.com/google/docsy/issues/new">tell us how we can improve</a>.'
-no = 'Sorry to hear that. Please <a href="https://github.com/google/docsy/issues/new">tell us how we can improve</a>.'
+yes = 'Glad to hear it! Please <a href="https://github.com/merico-dev/lake/issues/new">tell us how we can improve</a>.'
+no = 'Sorry to hear that. Please <a href="https://github.com/merico-dev/lake/issues/new">tell us how we can improve</a>.'
 
 # Adds a reading time to the top of each doc.
 # If you want this feature, but occasionally need to remove the Reading time from a single page, 
@@ -178,32 +199,32 @@ enable = false
 
 [params.links]
 # End user relevant links. These will show up on left side of footer and in the community page if you have one.
-[[params.links.user]]
-	name ="GitHub Discussions"
-	url = "https://github.com/google/docsy/discussions"
-	icon = "fab fa-github"
-        desc = "Discussion and help from your fellow users"
-[[params.links.user]]
-	name = "User mailing list"
-	url = "https://groups.google.com/forum/#!forum/docsy-users"
-	icon = "fa fa-envelope"
-        desc = "Sign up for Docsy announcements"
-[[params.links.user]]
-	name ="Twitter"
-	url = "https://twitter.com/docsydocs"
-	icon = "fab fa-twitter"
-        desc = "Follow us on Twitter to get the latest news!"
-[[params.links.user]]
-	name = "Stack Overflow"
-	url = "https://stackoverflow.com/questions/tagged/docsy"
-	icon = "fab fa-stack-overflow"
-        desc = "Practical questions and curated answers"
+#[[params.links.user]]
+#	name ="GitHub Discussions"
+#	url = "https://github.com/merico-dev/lake/discussions"
+#	icon = "fab fa-github"
+#        desc = "Discussion and help from your fellow users"
+#[[params.links.user]]
+#	name = "User mailing list"
+#	url = "https://merico.nddtf.com"
+#	icon = "fa fa-envelope"
+#        desc = "Sign up for Docsy announcements"
+#[[params.links.user]]
+#	name ="Contributors"
+#	url = "https://github.com/merico-dev/lake/graphs/contributors"
+#	icon = "fab fa-twitter"
+#        desc = "Look about the contributors on community"
+#[[params.links.user]]
+#	name = "Download"
+#	url = "https://github.com/merico-dev/lake/releases/latest"
+#	icon = "fab fa-stack-overflow"
+#       desc = "Practical questions and curated answers"
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
-[[params.links.developer]]
-	name = "GitHub"
-	url = "https://github.com/google/docsy"
-	icon = "fab fa-github"
-        desc = "Development takes place here!"
+#[[params.links.developer]]
+#	name = "GitHub"
+#	url = "https://github.com/merico-dev/lake/"
+#	icon = "fab fa-github"
+#        desc = "Development takes place here!"
 # [[params.links.developer]]
 	# name = "Slack"
 	# url = "https://example.org/slack"
