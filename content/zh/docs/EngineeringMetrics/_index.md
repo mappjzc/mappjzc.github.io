@@ -1,12 +1,12 @@
 ---
 title: "Engineering Metrics"
 linkTitle: "Engineering Metrics"
+tags: []
+categories: []
 weight: 40000
 description: >
-  No description.
+  The definition, values and data required for the 20+ engineering metrics supported by DevLake.
 ---
-# Engineering Metrics
-
 
 <table>
     <tr>
@@ -193,3 +193,4 @@ description: >
         <td>CI/CD entities: <a href="https://github.com/merico-dev/lake/blob/main/plugins/jenkins/README.md">Jenkins</a> PRs, <a href="https://github.com/merico-dev/lake/blob/main/plugins/gitlab/README.md">GitLabCI</a> MRs, etc</td>
     </tr>
 </table>
+<br><br><br>
