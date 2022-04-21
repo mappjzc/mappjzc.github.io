@@ -1,0 +1,129 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DevLake – Overview</title>
+    <link>https://devlake.io/docs/overview/</link>
+    <description>Recent content in Overview on DevLake</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://devlake.io/docs/overview/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: What is DevLake?</title>
+      <link>https://devlake.io/docs/overview/1.whatisdevlake/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devlake.io/docs/overview/1.whatisdevlake/</guid>
+      <description>
+        
+        
+        &lt;p&gt;DevLake brings your DevOps data into one practical, customized, extensible view. Ingest, analyze, and visualize data from an ever-growing list of developer tools, with our open source product.&lt;/p&gt;
+&lt;p&gt;DevLake is designed for developer teams looking to make better sense of their development process and to bring a more data-driven approach to their own practices. You can ask DevLake many questions regarding your development process. Just connect and query.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://app-259373083972538368-3002.ars.teamcode.com/d/0Rjxknc7z/demo-homepage?orgId=1&#34;&gt;See demo&lt;/a&gt;. Username/password:test/test. The demo is based on the data from this repo, merico-dev/lake.&lt;/p&gt;
+&lt;div align=&#34;left&#34;&gt;
+&lt;img src=&#34;https://user-images.githubusercontent.com/14050754/145056261-ceaf7044-f5c5-420f-80ca-54e56eb8e2a7.png&#34; width=&#34;100%&#34; alt=&#34;User Flow&#34; style=&#34;border-radius:15px;&#34;/&gt;
+&lt;p align=&#34;center&#34;&gt;User Flow&lt;/p&gt;
+&lt;br&gt;
+&lt;h3 id=&#34;what-can-be-accomplished-with-devlake&#34;&gt;What can be accomplished with DevLake?&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Collect DevOps data across the entire SDLC process and connect data silos.&lt;/li&gt;
+&lt;li&gt;A standard &lt;a href=&#34;https://github.com/merico-dev/lake/wiki/DataModel.Domain-layer-schema&#34;&gt;data model&lt;/a&gt; and out-of-the-box &lt;a href=&#34;https://github.com/merico-dev/lake/wiki/Metric-Cheatsheet&#34;&gt;metrics&lt;/a&gt; for software engineering.&lt;/li&gt;
+&lt;li&gt;Flexible &lt;a href=&#34;https://github.com/merico-dev/lake/blob/main/ARCHITECTURE.md&#34;&gt;framework&lt;/a&gt; for data collection and ETL, support customized analysis.
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Architecture</title>
+      <link>https://devlake.io/docs/overview/2.architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devlake.io/docs/overview/2.architecture/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;img src=&#34;https://user-images.githubusercontent.com/14050754/143292041-a4839bf1-ca46-462d-96da-2381c8aa0fed.png&#34; alt=&#34;devlake-architecture&#34;&gt;&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;Architecture Diagram&lt;/p&gt;
+&lt;h2 id=&#34;stack-from-low-to-high&#34;&gt;Stack (from low to high)&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;config&lt;/li&gt;
+&lt;li&gt;logger&lt;/li&gt;
+&lt;li&gt;models&lt;/li&gt;
+&lt;li&gt;plugins&lt;/li&gt;
+&lt;li&gt;services&lt;/li&gt;
+&lt;li&gt;api / cli&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;rules&#34;&gt;Rules&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Higher layer calls lower layer, not the other way around&lt;/li&gt;
+&lt;li&gt;Whenever lower layer neeeds something from higher layer, a interface should be introduced for decoupling&lt;/li&gt;
+&lt;li&gt;Components should be initialized in a low to high order during bootstraping
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Roadmap</title>
+      <link>https://devlake.io/docs/overview/3.roadmap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devlake.io/docs/overview/3.roadmap/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Moving to Apache Incubator and making DevLake a graduation-ready project.&lt;/li&gt;
+&lt;li&gt;Explore and implement 3 typical use scenarios to help certain engineering teams and developers:
+&lt;ul&gt;
+&lt;li&gt;Observation of open-source project contribution and quality&lt;/li&gt;
+&lt;li&gt;DORA metrics for the DevOps team&lt;/li&gt;
+&lt;li&gt;SDLC workflow monitoring and improvement&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Better UX for end-users and contributors.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;devlake-2022-roadmap&#34;&gt;DevLake 2022 Roadmap&lt;/h2&gt;
+&lt;p&gt;DevLake is currently under rapid development. This page describes the project’s public roadmap, the result of an ongoing collaboration between the core maintainers and the broader DevLake community.&lt;br&gt;&lt;br&gt;
+This roadmap is broken down by the goals in the last section.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Category&lt;/th&gt;
+&lt;th&gt;Features&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;More data sources across different &lt;a href=&#34;https://github.com/merico-dev/lake/wiki/DevOps-Domain-Definition&#34;&gt;DevOps domains&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;1. &lt;strong&gt;Issue/Task Management - Jira server&lt;/strong&gt; &lt;br&gt; 2. &lt;strong&gt;Issue/Task Management - Jira data center&lt;/strong&gt; &lt;br&gt; 3. Issue/Task Management - GitLab Issues &lt;br&gt; 4. Issue/Task Management - Trello &lt;br&gt; 5. &lt;strong&gt;Issue/Task Management - TPAD&lt;/strong&gt; &lt;br&gt; 6. Issue/Task Management - Teambition &lt;br&gt; 7. Issue/Task Management - Trello &lt;br&gt; 8. &lt;strong&gt;Source Code Management - GitLab on-premise&lt;/strong&gt; &lt;br&gt; 9. Source Code Management - BitBucket &lt;br&gt; 10. Source Code Management - Gitee &lt;br&gt; 11. Code Review - Gerrit &lt;br&gt; 12. Code Review - GitLab on-premise MRs &lt;br&gt; 13. &lt;strong&gt;CI/CD - GitHub Action&lt;/strong&gt; &lt;br&gt; 14. CI/CD - ArgoCI &lt;br&gt; 15. CI/CD - ArgoCD &lt;br&gt; 16. CI/CD - TeamCity &lt;br&gt; 17. &lt;strong&gt;Quality - SonarQube&lt;/strong&gt; &lt;br&gt; 18. Quality - Fossa &lt;br&gt; 19. QA - Selenium &lt;br&gt; 20. QA - Junit &lt;br&gt; 21. QA - JMeter &lt;br&gt; 22. QA - Cucumber test &lt;br&gt; 23. Calendar - Google Calendar &lt;br&gt; 24. Calendar - Zoom Calendar &lt;br&gt; 25. &lt;strong&gt;Calendar - Lark Calendar&lt;/strong&gt; &lt;br&gt; 26. Calendar - Tencent Calendar &lt;br&gt; 27. Other - GitHub stars, clones, watches &lt;br&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;More comprehensive and flexible &lt;a href=&#34;https://github.com/merico-dev/lake/issues/700&#34;&gt;engineering data model&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;1. complete and polish standard data models for different &lt;a href=&#34;https://github.com/merico-dev/lake/wiki/DevOps-Domain-Definition&#34;&gt;DevOps domains&lt;/a&gt; &lt;br&gt; 2. allow users to modify standard tables &lt;br&gt; 3. allow users to create new tables &lt;br&gt; 4. allow users to easily define ETL rules &lt;br&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Better UX&lt;/td&gt;
+&lt;td&gt;1. improve config-UI design for better onboard experience &lt;br&gt; 2. improve data collection speed for Github and other plugins with strict API rate limit &lt;br&gt; 3. build a website to present well-organized documentation to DevLake users and contributors &lt;br&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;how-to-influence-roadmap&#34;&gt;How to Influence Roadmap&lt;/h2&gt;
+&lt;p&gt;A roadmap is only useful when it captures real user needs. We are glad to hear from you if you have specific use cases, feedback, or ideas. You can submit an issue to let us know!
+Also, if you plan to work (or are already working) on a new or existing feature, tell us, so that we can update the roadmap accordingly. We are happy to share knowledge and context to help your feature land successfully.
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
